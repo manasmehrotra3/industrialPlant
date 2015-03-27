@@ -62,7 +62,7 @@ function initScene() {
 function initGeometry(){
   var path = 'textures/cubemap/plant/';
 
-    var format = '.jpg';
+    var format = '.JPG';
     var sides = [
         path + 'posx' + format, path + 'negx' + format,
         path + 'posy' + format, path + 'negy' + format,
