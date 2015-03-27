@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Capital Group VR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <style>
+      #info{
+        padding:10px;
+        color:#fff;
+        position:absolute;
+        background-color:rgba(0,0,0,0.4);
+      }
+
+      #generic_error,
+      #security_error{
+        padding-top:200px;
+        width:500px;
+        margin-left:auto;
+        margin-right:auto;
+        display:none;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="info">
+      <div class="button" id="toggle-render">toggle render mode</div> <div class="button" id="help">help</div>
+    </div>
+
+    <div id="viewport"></div>
+    <div id="security_error">
+      <p>This file must be served via HTTP to support the use of textures.</p>
+      <p>Please host this content via a web server of some kind and try again.</p>
+    </div>
+    <div id="generic_error">
+      <p>Oh dang, something went wrong while trying to render the scene.</p>
+      <p>Exception: <span id="exception_message"></span></p>
+    </div>
+    
+    <script src="lib/OculusBridge.min.js"></script>
+    
+    <script src="lib/three.js"></script>
+    <script src="lib/OrbitControls.js"></script>
+    <script src="lib/RiftCamera.js"></script>
+
+    <script src="js/first_person.js"></script>
+  </body>
+</html>
